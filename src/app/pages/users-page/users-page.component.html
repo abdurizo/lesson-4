@@ -1,1 +1,10 @@
-<p>users-page works!</p>
+@for (user of users; track $index) {
+<div class="wrap">
+    <burron [routerLink]="['users',user.id]" class="user">
+        <span>{{user.id}} </span>
+        <span>{{user.name}} </span>
+    </burron>
+</div>
+}
+
+
